@@ -1,42 +1,21 @@
+
 $(document).ready(function() {
-  $("button#green").click(function(){
-    $(".greenish").toggle();
-  });
-  $("button#yellow").click(function(){
-    $(".yellowish").toggle();
-  });
-  $("button#red").click(function(){
-    $(".redish").toggle();
-  });
-  $("button#blue").click(function(){
-    $(".blueish").toggle();
+  $("button#hello").click(function() {
+    $("ul#user").prepend("<li>Hello!</li>");
+    $("ul#webpage").prepend("<li>Why hello there human!</li>");
   });
 
+  $("button#goodbye").click(function() {
+    $("ul#user").prepend("<li>Goodbye!</li>");
+    $("ul#webpage").prepend("<li>Goodbye, human overlord!</li>");
+  });
 
+  $("button#stop").click(function() {
+    $("ul#user").prepend("<li>Stop copying me!</li>");
+    $("ul#webpage").prepend("<li>Sorry, meant no offense</li>");
+  });
 
-//   //light switch button function
-//   $("button#blue").click(function() {
-//     $("body").removeClass();
-//     $("body").toggleClass("blue-background");
-//   });
-//
-//
-// //methods for colored buttons
-//   $("button#green").click(function() {
-//     $("body").removeClass();
-//     $("body").toggleClass("green-background");
-//   });
-//   $("button#yellow").click(function() {
-//     $("body").removeClass();
-//     $("body").addClass("yellow-background");
-//   });
-//   $("button#red").click(function() {
-//     $("body").removeClass();
-//     $("body").addClass("red-background");
-//   });
-//
-//   //highlight function (makeItAbox)
-//   $("p#highlight").click(function() {
-//     $("p#highlight").toggleClass("makeItAbox");
-//   });
+  $("button#pugb").click(function() {
+    $(this).after('<img src="img/pug.jpeg">');
+  });
 });
